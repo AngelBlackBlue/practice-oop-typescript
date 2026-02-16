@@ -1,0 +1,30 @@
+{
+  "name": "practice-oop-typescript",
+  "version": "1.0.0",
+  "description": "Practice OOP with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelBlackBlue/practice-oop-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AngelBlackBlue/practice-oop-typescript/issues"
+  },
+  "homepage": "https://github.com/AngelBlackBlue/practice-oop-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "jest": "30.2.0",
+    "ts-jest": "29.4.6",
+    "typescript": "5.9.3"
+  }
+}
