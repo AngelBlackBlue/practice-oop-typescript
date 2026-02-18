@@ -4,6 +4,7 @@
   "description": "Practice OOP with TypeScript",
   "main": "index.js",
   "scripts": {
+    "run": "ts-node",
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",

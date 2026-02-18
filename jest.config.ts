@@ -13,7 +13,7 @@ const config: Config = {
     '!src/**/*.spec.ts',
     '!src/**/*.test.ts'
   ],
-  moduleFileExtensions: ['ts', 'js', 'json', 'node']
+  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
 };
 
 export default config;
