@@ -1,11 +1,11 @@
 // @ts-ignore
-import { 
-  EmailNotificador, 
+import {
+  EmailNotificador,
   SMSNotificador,
   EmailCanal,
   SMSCanal,
-  NotificadorComposicion 
-// @ts-ignore
+  NotificadorComposicion
+  // @ts-ignore
 } from '../src/ejercicio-7-herencia-vs-composicion';
 
 describe('Ejercicio 7 - Herencia vs Composición', () => {
@@ -24,27 +24,30 @@ describe('Ejercicio 7 - Herencia vs Composición', () => {
       );
     });
   });
-
   describe('Enfoque con Composición', () => {
     test('NotificadorComposicion debe usar el canal proporcionado', () => {
+      // @ts-ignore
       const canalEmail = new EmailCanal('test@test.com');
       const notificador = new NotificadorComposicion(canalEmail);
-      
+
       expect(notificador.enviar('Mensaje')).toBe(
         'Enviando email a test@test.com: Mensaje'
       );
     });
 
     test('debe poder cambiar el canal dinámicamente', () => {
+      // @ts-ignore
       const canalEmail = new EmailCanal('test@test.com');
+      // @ts-ignore
       const canalSMS = new SMSCanal('123456789');
       const notificador = new NotificadorComposicion(canalEmail);
-      
+
       expect(notificador.enviar('Primero')).toBe(
         'Enviando email a test@test.com: Primero'
       );
-      
+
       // Cambiamos el canal
+      // @ts-ignore
       notificador.canal = canalSMS;
       expect(notificador.enviar('Segundo')).toBe(
         'Enviando SMS a 123456789: Segundo'

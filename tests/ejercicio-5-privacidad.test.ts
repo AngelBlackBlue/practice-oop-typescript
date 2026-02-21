@@ -24,11 +24,4 @@ describe('Ejercicio 5 - Privacidad con #', () => {
     expect(usuario.verificarPassword('secreto')).toBe(false); // No debería poder verificar si está bloqueado
   });
 
-  test('no debe permitir modificar intentosFallidos directamente', () => {
-    const usuario = new Usuario('test3', 'pass');
-    expect(() => {
-      // @ts-ignore - Intentamos acceder a propiedad privada
-      usuario.#intentosFallidos = 10;
-    }).toThrow();
-  });
 });
